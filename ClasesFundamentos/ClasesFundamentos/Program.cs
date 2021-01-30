@@ -93,16 +93,99 @@ namespace ClasesFundamentos
             //    Console.WriteLine(texto, "segundo hermano", edad2, "primer hermnao", edad1, diferencia);
             //}
             // 10/3 = 3           10%3=1    4%2=0
-            int numero1 = 55;
-            int numero2 = 10;
+            //int numero1 = 55;
+            //int numero2 = 10;
 
-            if (numero1 > numero2)
+            //if (numero1 > numero2)
+            //{
+            //    if (numero1 % numero2 == 0)
+            //    {
+            //        Console.WriteLine("El numero1 es mayor y es multiplo del numero2");
+            //    }
+            //}
+
+            int numero1 = Convert.ToInt32(Console.ReadLine());
+            int numero2 = Convert.ToInt32(Console.ReadLine());
+            int numero3 = Convert.ToInt32(Console.ReadLine());
+
+            //if (numero1 > numero2) 
+            //{
+            //    if (numero1 > numero3)
+            //    {
+            //        if (numero2 > numero3)
+            //        {
+            //            Console.WriteLine("El mayor es el numero 1, el del medio es el numero 2 y el menor el numero 3");
+            //        }
+            //        if (numero3 > numero2)
+            //        {
+            //            Console.WriteLine("El mayor es el numero 1, el del medio es el numero 3 y el menor el numero 2");
+            //        }
+            //    }
+            //}
+            //if (numero2 > numero1)
+            //{
+            //    if (numero2> numero3)
+            //    {
+            //        if (numero1 > numero3)
+            //        {
+            //            Console.WriteLine("El mayor es el numero 1, el del medio es el numero 2 y el menor el numero 3");
+            //        }
+            //        if (numero3 > numero1)
+            //        {
+            //            Console.WriteLine("El mayor es el numero 1, el del medio es el numero 3 y el menor el numero 2");
+            //        }
+            //    }
+            //}
+            //if (numero3 > numero1)
+            //{
+            //    if (numero3 > numero2)
+            //    {
+            //        if (numero2 > numero1)
+            //        {
+            //            Console.WriteLine("El mayor es el numero 1, el del medio es el numero 2 y el menor el numero 3");
+            //        }
+            //        if (numero3 > numero2)
+            //        {
+            //            Console.WriteLine("El mayor es el numero 1, el del medio es el numero 3 y el menor el numero 2");
+            //        }
+            //    }
+            //}
+
+            //operadores logicos && (y logico) || (o logico)
+            if (numero1 > numero2 && numero1 > numero3)
             {
-                if (numero1 % numero2 == 0)
+                if (numero2 > numero3)
                 {
-                    Console.WriteLine("El numero1 es mayor y es multiplo del numero2");
+                    Console.WriteLine("El mayor es el numero 1, el del medio es el numero 2 y el menor el numero 3");
+                }
+                if (numero3 > numero2)
+                {
+                    Console.WriteLine("El mayor es el numero 1, el del medio es el numero 3 y el menor el numero 2");
                 }
             }
+            if (numero2 > numero1 && numero2 > numero3)
+            {
+                if (numero1 > numero3)
+                {
+                    Console.WriteLine("El mayor es el numero 2, el del medio es el numero 1 y el menor el numero 3");
+                }
+                if (numero3 > numero1)
+                {
+                    Console.WriteLine("El mayor es el numero 2, el del medio es el numero 3 y el menor el numero 1");
+                }
+            }
+            if (numero3 > numero1 && numero3 > numero2)
+            {
+                if (numero1 > numero2)
+                {
+                    Console.WriteLine("El mayor es el numero 3, el del medio es el numero 1 y el menor el numero 2");
+                }
+                if (numero2 > numero1)
+                {
+                    Console.WriteLine("El mayor es el numero 3, el del medio es el numero 2 y el menor el numero 1");
+                }
+            }
+
         }
     }
 }
