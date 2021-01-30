@@ -54,13 +54,26 @@ namespace ClasesFundamentos
             //Console.WriteLine(texto1);
             //Console.WriteLine(texto2);
 
-            StringBuilder strB1 = new StringBuilder("Hola Mundo!!!");
-            StringBuilder strB2 = strB1;
-            Console.WriteLine(strB1);
-            Console.WriteLine(strB2);
-            strB2.Append(" Y hola a todos en fundamentos!!!!");
-            Console.WriteLine(strB1);
-            Console.WriteLine(strB2);
+            //StringBuilder strB1 = new StringBuilder("Hola Mundo!!!");
+            //StringBuilder strB2 = strB1;
+            //Console.WriteLine(strB1);
+            //Console.WriteLine(strB2);
+            //strB2.Append(" Y hola a todos en fundamentos!!!!");
+            //Console.WriteLine(strB1);
+            //Console.WriteLine(strB2);
+
+            //bool valorVerdad = 2 > 5;
+
+            int numero1 = Convert.ToInt32(Console.ReadLine());
+            int numero2 = Convert.ToInt32(Console.ReadLine());
+            if (numero1 > numero2) 
+            {
+                Console.WriteLine("el numero {0} es el mayor", numero1);
+            }
+            if (numero2 > numero1)
+            {
+                Console.WriteLine("el numero {0} es el mayor", numero2);
+            }
         }
     }
 }
