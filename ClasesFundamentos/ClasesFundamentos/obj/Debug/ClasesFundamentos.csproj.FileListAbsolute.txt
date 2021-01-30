@@ -1,0 +1,7 @@
+D:\Codigo2021\Fundamentos12021\ClasesFundamentos\ClasesFundamentos\bin\Debug\ClasesFundamentos.exe.config
+D:\Codigo2021\Fundamentos12021\ClasesFundamentos\ClasesFundamentos\bin\Debug\ClasesFundamentos.exe
+D:\Codigo2021\Fundamentos12021\ClasesFundamentos\ClasesFundamentos\bin\Debug\ClasesFundamentos.pdb
+D:\Codigo2021\Fundamentos12021\ClasesFundamentos\ClasesFundamentos\obj\Debug\ClasesFundamentos.csprojAssemblyReference.cache
+D:\Codigo2021\Fundamentos12021\ClasesFundamentos\ClasesFundamentos\obj\Debug\ClasesFundamentos.csproj.CoreCompileInputs.cache
+D:\Codigo2021\Fundamentos12021\ClasesFundamentos\ClasesFundamentos\obj\Debug\ClasesFundamentos.exe
+D:\Codigo2021\Fundamentos12021\ClasesFundamentos\ClasesFundamentos\obj\Debug\ClasesFundamentos.pdb
