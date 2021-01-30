@@ -64,15 +64,44 @@ namespace ClasesFundamentos
 
             //bool valorVerdad = 2 > 5;
 
-            int numero1 = Convert.ToInt32(Console.ReadLine());
-            int numero2 = Convert.ToInt32(Console.ReadLine());
-            if (numero1 > numero2) 
+            //int numero1 = Convert.ToInt32(Console.ReadLine());
+            //int numero2 = Convert.ToInt32(Console.ReadLine());
+            //if (numero1 > numero2) 
+            //{
+            //    Console.WriteLine("el numero {0} es el mayor", numero1);
+            //}
+            //if (numero2 > numero1)
+            //{
+            //    Console.WriteLine("el numero {0} es el mayor", numero2);
+            //}
+
+            //Console.WriteLine("Ingrese la edad del primer hermano");
+            //int edad1 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Ingrese la edad del segundo hermano");
+            //int edad2 = Convert.ToInt32(Console.ReadLine());
+            //int diferencia = 0;
+            //string texto = "el mayor es {0} con {1} y el menor es {2} con {3} y la diferencia de sus edades es de {4} años";
+
+            //if (edad1 > edad2)
+            //{
+            //    diferencia = edad1 - edad2;
+            //    Console.WriteLine(texto, "primer hermano", edad1, "segundo hermnao", edad2, diferencia);
+            //}
+            //if (edad2 > edad1)
+            //{
+            //    diferencia = edad2 - edad1;
+            //    Console.WriteLine(texto, "segundo hermano", edad2, "primer hermnao", edad1, diferencia);
+            //}
+            // 10/3 = 3           10%3=1    4%2=0
+            int numero1 = 55;
+            int numero2 = 10;
+
+            if (numero1 > numero2)
             {
-                Console.WriteLine("el numero {0} es el mayor", numero1);
-            }
-            if (numero2 > numero1)
-            {
-                Console.WriteLine("el numero {0} es el mayor", numero2);
+                if (numero1 % numero2 == 0)
+                {
+                    Console.WriteLine("El numero1 es mayor y es multiplo del numero2");
+                }
             }
         }
     }
