@@ -104,9 +104,9 @@ namespace ClasesFundamentos
             //    }
             //}
 
-            int numero1 = Convert.ToInt32(Console.ReadLine());
-            int numero2 = Convert.ToInt32(Console.ReadLine());
-            int numero3 = Convert.ToInt32(Console.ReadLine());
+            //int numero1 = Convert.ToInt32(Console.ReadLine());
+            //int numero2 = Convert.ToInt32(Console.ReadLine());
+            //int numero3 = Convert.ToInt32(Console.ReadLine());
 
             //if (numero1 > numero2) 
             //{
@@ -152,39 +152,168 @@ namespace ClasesFundamentos
             //}
 
             //operadores logicos && (y logico) || (o logico)
-            if (numero1 > numero2 && numero1 > numero3)
+            //if (numero1 > numero2 && numero1 > numero3)
+            //{
+            //    if (numero2 > numero3)
+            //    {
+            //        Console.WriteLine("El mayor es el numero 1, el del medio es el numero 2 y el menor el numero 3");
+            //    }
+            //    if (numero3 > numero2)
+            //    {
+            //        Console.WriteLine("El mayor es el numero 1, el del medio es el numero 3 y el menor el numero 2");
+            //    }
+            //}
+            //if (numero2 > numero1 && numero2 > numero3)
+            //{
+            //    if (numero1 > numero3)
+            //    {
+            //        Console.WriteLine("El mayor es el numero 2, el del medio es el numero 1 y el menor el numero 3");
+            //    }
+            //    if (numero3 > numero1)
+            //    {
+            //        Console.WriteLine("El mayor es el numero 2, el del medio es el numero 3 y el menor el numero 1");
+            //    }
+            //}
+            //if (numero3 > numero1 && numero3 > numero2)
+            //{
+            //    if (numero1 > numero2)
+            //    {
+            //        Console.WriteLine("El mayor es el numero 3, el del medio es el numero 1 y el menor el numero 2");
+            //    }
+            //    if (numero2 > numero1)
+            //    {
+            //        Console.WriteLine("El mayor es el numero 3, el del medio es el numero 2 y el menor el numero 1");
+            //    }
+            //}
+
+            //int numero1 = Convert.ToInt32(Console.ReadLine());
+            //int numero2 = Convert.ToInt32(Console.ReadLine());
+            //int numero3 = Convert.ToInt32(Console.ReadLine());
+
+            //if (numero1 > numero2 && numero1 > numero3)
+            //{
+            //    if (numero2 > numero3)
+            //    {
+            //        Console.WriteLine("El mayor es el numero 1, el del medio es el numero 2 y el menor el numero 3");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("El mayor es el numero 1, el del medio es el numero 3 y el menor el numero 2");
+            //    }
+            //}
+            //else if (numero2 > numero1 && numero2 > numero3)
+            //{
+            //    if (numero1 > numero3)
+            //    {
+            //        Console.WriteLine("El mayor es el numero 2, el del medio es el numero 1 y el menor el numero 3");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("El mayor es el numero 2, el del medio es el numero 3 y el menor el numero 1");
+            //    }
+            //}
+            //else
+            //{
+            //    if (numero1 > numero2)
+            //    {
+            //        Console.WriteLine("El mayor es el numero 3, el del medio es el numero 1 y el menor el numero 2");
+            //    }
+            //    if (numero2 > numero1)
+            //    {
+            //        Console.WriteLine("El mayor es el numero 3, el del medio es el numero 2 y el menor el numero 1");
+            //    }
+            //}
+            //int lado1 = Convert.ToInt32(Console.ReadLine());
+            //int lado2 = Convert.ToInt32(Console.ReadLine());
+            //int lado3 = Convert.ToInt32(Console.ReadLine());
+
+            //if (lado1 == lado2 && lado1 == lado3 && lado2 == lado3)
+            //{
+            //    Console.WriteLine("Es un triangulo Equilatero");
+            //}
+            //else if (lado1 != lado2 && lado1 != lado3 && lado2 != lado3)
+            //{
+            //    Console.WriteLine("Es un triangulo Escaleno");
+            //}
+            //else 
+            //{
+            //    Console.WriteLine("Es un triangulo Isosceles");
+            //}
+
+            //int angulo1 = Convert.ToInt32(Console.ReadLine());
+            //int angulo2 = Convert.ToInt32(Console.ReadLine());
+            //int angulo3 = Convert.ToInt32(Console.ReadLine());
+
+            //if (angulo1 + angulo2 + angulo3 == 180)
+            //{
+            //    if (angulo1 == 90 || angulo2 == 90 || angulo3 == 90)
+            //    {
+            //        Console.WriteLine("Es un triangulo rectangulo");
+            //    }
+            //    else if (angulo1 > 90 || angulo2 > 90 || angulo3 > 90)
+            //    {
+            //        Console.WriteLine("Es un triangulo obtusangulo");
+            //    }
+            //    else 
+            //    {
+            //        Console.WriteLine("Es un triangulo acutangulo");
+            //    }
+            //}
+            //else 
+            //{
+            //    Console.WriteLine("Los angulos internos no representan un triangulo");
+            //}
+
+            //int cantidad = Convert.ToInt32(Console.ReadLine());
+            //double costoUnidad = Convert.ToDouble(Console.ReadLine());
+            //double costoTotal = cantidad * costoUnidad;
+            //double descuento = 0;
+            //if (cantidad > 10 && cantidad <= 25)
+            //{
+            //    descuento = 0.03;
+            //}
+            //else if (cantidad > 25 && cantidad < 50)
+            //{
+            //    descuento = 0.05;
+            //}
+            //else if (cantidad >= 50) 
+            //{
+            //    descuento = 0.07;
+            //}
+            //Console.WriteLine("El costo total es de {0} y el costo con descuento es de {1} se aplica un descuento de {2}",
+            //    costoTotal, costoTotal - (costoTotal*descuento), descuento * 100);
+
+            char operador = Console.ReadLine()[0];
+            int numero1 = Convert.ToInt32(Console.ReadLine());
+            int numero2 = Convert.ToInt32(Console.ReadLine());
+            int result = 0;
+            switch (operador)
             {
-                if (numero2 > numero3)
-                {
-                    Console.WriteLine("El mayor es el numero 1, el del medio es el numero 2 y el menor el numero 3");
-                }
-                if (numero3 > numero2)
-                {
-                    Console.WriteLine("El mayor es el numero 1, el del medio es el numero 3 y el menor el numero 2");
-                }
+                case '+':
+                    Console.WriteLine("Estamos trabajando con una suma");
+                    result = numero1 + numero2;
+                    break;
+                case '-':
+                    Console.WriteLine("Estamos trabajando con una resta");
+                    result = numero1 - numero2;
+                    break;
+                case '*':
+                    Console.WriteLine("Estamos trabajando con una multiplicacion");
+                    result = numero1 * numero2;
+                    break;
+                case '%':
+                    Console.WriteLine("Estamos trabajando con un modulo");
+                    result = numero1 % numero2;
+                    break;
+                case '/':
+                    Console.WriteLine("Estamos trabajando con una division entera");
+                    result = numero1 / numero2;
+                    break;
+                default:
+                    Console.WriteLine("No es un operador valido");
+                    return;
             }
-            if (numero2 > numero1 && numero2 > numero3)
-            {
-                if (numero1 > numero3)
-                {
-                    Console.WriteLine("El mayor es el numero 2, el del medio es el numero 1 y el menor el numero 3");
-                }
-                if (numero3 > numero1)
-                {
-                    Console.WriteLine("El mayor es el numero 2, el del medio es el numero 3 y el menor el numero 1");
-                }
-            }
-            if (numero3 > numero1 && numero3 > numero2)
-            {
-                if (numero1 > numero2)
-                {
-                    Console.WriteLine("El mayor es el numero 3, el del medio es el numero 1 y el menor el numero 2");
-                }
-                if (numero2 > numero1)
-                {
-                    Console.WriteLine("El mayor es el numero 3, el del medio es el numero 2 y el menor el numero 1");
-                }
-            }
+            Console.WriteLine("El resultado del operador es {0}", result);
 
         }
     }
