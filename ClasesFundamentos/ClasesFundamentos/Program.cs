@@ -8,6 +8,16 @@ namespace ClasesFundamentos
 {
     class Program
     {
+        public enum Dias
+        {
+            Domingo = 1,
+            Lunes,
+            Martes,
+            Miercoles,
+            Jueves,
+            Viernes,
+            Sabado
+        }
         static void Main(string[] args)
         {
             //Console.WriteLine("Hola Mundo");
@@ -283,37 +293,66 @@ namespace ClasesFundamentos
             //Console.WriteLine("El costo total es de {0} y el costo con descuento es de {1} se aplica un descuento de {2}",
             //    costoTotal, costoTotal - (costoTotal*descuento), descuento * 100);
 
-            char operador = Console.ReadLine()[0];
-            int numero1 = Convert.ToInt32(Console.ReadLine());
-            int numero2 = Convert.ToInt32(Console.ReadLine());
-            int result = 0;
-            switch (operador)
-            {
-                case '+':
-                    Console.WriteLine("Estamos trabajando con una suma");
-                    result = numero1 + numero2;
-                    break;
-                case '-':
-                    Console.WriteLine("Estamos trabajando con una resta");
-                    result = numero1 - numero2;
-                    break;
-                case '*':
-                    Console.WriteLine("Estamos trabajando con una multiplicacion");
-                    result = numero1 * numero2;
-                    break;
-                case '%':
-                    Console.WriteLine("Estamos trabajando con un modulo");
-                    result = numero1 % numero2;
-                    break;
-                case '/':
-                    Console.WriteLine("Estamos trabajando con una division entera");
-                    result = numero1 / numero2;
-                    break;
-                default:
-                    Console.WriteLine("No es un operador valido");
-                    return;
-            }
-            Console.WriteLine("El resultado del operador es {0}", result);
+            //char operador = Console.ReadLine()[0];
+            //int numero1 = Convert.ToInt32(Console.ReadLine());
+            //int numero2 = Convert.ToInt32(Console.ReadLine());
+            //int result = 0;
+            //switch (operador)
+            //{
+            //    case '+':
+            //        Console.WriteLine("Estamos trabajando con una suma");
+            //        result = numero1 + numero2;
+            //        break;
+            //    case '-':
+            //        Console.WriteLine("Estamos trabajando con una resta");
+            //        result = numero1 - numero2;
+            //        break;
+            //    case '*':
+            //        Console.WriteLine("Estamos trabajando con una multiplicacion");
+            //        result = numero1 * numero2;
+            //        break;
+            //    case '%':
+            //        Console.WriteLine("Estamos trabajando con un modulo");
+            //        result = numero1 % numero2;
+            //        break;
+            //    case '/':
+            //        Console.WriteLine("Estamos trabajando con una division entera");
+            //        result = numero1 / numero2;
+            //        break;
+            //    default:
+            //        Console.WriteLine("No es un operador valido");
+            //        return;
+            //}
+            //Console.WriteLine("El resultado del operador es {0}", result);
+
+            //int dia = Convert.ToInt32(Console.ReadLine());
+            //switch (dia) 
+            //{
+            //    case (int)Dias.Domingo:
+            //        Console.WriteLine("Es dia Domingo");
+            //        break;
+            //    case (int)Dias.Lunes:
+            //        Console.WriteLine("Es dia Lunes");
+            //        break;
+            //    case (int)Dias.Martes:
+            //        Console.WriteLine("Es dia Martes");
+            //        break;
+            //    case (int)Dias.Miercoles:
+            //        Console.WriteLine("Es dia Miercoles");
+            //        break;
+            //    case (int)Dias.Jueves:
+            //        Console.WriteLine("Es dia Jueves");
+            //        break;
+            //    case (int)Dias.Viernes:
+            //        Console.WriteLine("Es dia Viernes");
+            //        break;
+            //    case (int)Dias.Sabado:
+            //        Console.WriteLine("Es dia Sabado");
+            //        break;
+            //    default:
+            //        Console.WriteLine("No es un dia de la semana");
+            //        return;
+            //}
 
         }
     }
