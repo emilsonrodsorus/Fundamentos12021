@@ -354,6 +354,32 @@ namespace ClasesFundamentos
             //        return;
             //}
 
+            // matrices o listas son arreglos estaticos o sea que necesitan un tamaño 
+            //int[] listaNumeros = new int[10];
+            //listaNumeros[3] = 25;
+            int[] listaNumeros2 = new int[] { 5, 7, 9, 10, 13, 11 };
+            //int[] listaNumeros3 = { 10, 11, 25, 5, 3, 6, 8, 9 };
+            //Console.WriteLine(listaNumeros[3]);
+            //Console.WriteLine(listaNumeros3.Length);
+            //// los string tambien son arreglos de caracteres
+            //string texto = "Hello Mundo de la programacion!!!";
+            //Console.WriteLine(texto.Length);
+            //Console.WriteLine(texto[8]);
+            //Console.WriteLine(texto[texto.Length - 1]);
+
+            string texto = Console.ReadLine();
+            int midIndex = texto.Length / 2;
+            Console.WriteLine("La primera letra del texto es {0}", texto[0]);
+            Console.WriteLine("La ultima letra del texto es {0}", texto[texto.Length - 1]);
+            Console.WriteLine("La letra del medio del texto es {0}", texto[midIndex]);
+
+            Console.WriteLine("El primer numero de la lista es {0}", listaNumeros2[0]);
+            Console.WriteLine("El ultimo numero de la lista es {0}", listaNumeros2[listaNumeros2.Length - 1]);
+            Console.WriteLine("El numero del medio de la lista es {0}", listaNumeros2[listaNumeros2.Length / 2]);
+
+
+            // si intentamos acceder con un indice que no corresponde lanzara un error de prorgamacion
+            // Console.WriteLine(texto[texto.Length]);
         }
     }
 }
