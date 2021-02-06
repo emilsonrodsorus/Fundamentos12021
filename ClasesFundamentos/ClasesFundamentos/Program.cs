@@ -522,16 +522,27 @@ namespace ClasesFundamentos
             //    index++;
             //}
 
-            int numero = Convert.ToInt32(Console.ReadLine());
-            int numOriginal = numero;
-            int factorial = 1;
-            while (numero > 0)
-            {
-                factorial = factorial * numero;
-                numero--; // numero = numero - 1
-            }
+            //int numero = Convert.ToInt32(Console.ReadLine());
+            //int numOriginal = numero;
+            //int factorial = 1;
+            //while (numero > 0)
+            //{
+            //    factorial = factorial * numero;
+            //    numero--; // numero = numero - 1
+            //}
 
-            Console.WriteLine("El factorial de {0} es {1}", numOriginal, factorial);
+            //Console.WriteLine("El factorial de {0} es {1}", numOriginal, factorial);
+
+            int numeroBase = Convert.ToInt32(Console.ReadLine());
+            int exponente = Convert.ToInt32(Console.ReadLine());
+            int exponenteOr = exponente;
+            int resultado = 1;
+            while (exponente > 0)
+            {
+                resultado = resultado * numeroBase;
+                exponente--;
+            }
+            Console.WriteLine("El numero {0} elevado al {1} es {2}", numeroBase, exponenteOr, resultado);
         }
     }
 }
