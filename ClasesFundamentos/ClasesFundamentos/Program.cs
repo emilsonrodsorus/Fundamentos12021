@@ -411,8 +411,8 @@ namespace ClasesFundamentos
             //    index++;// index = index + 1
             //}
             //int[] listaNotas = { 95, 100, 85, 95, 90, 100, 98, 99, 97, 100 }; 
-            
-            
+
+
             //int[] listaNotas = new int[10];
             //int index = 0;
 
@@ -432,6 +432,106 @@ namespace ClasesFundamentos
 
             //Console.WriteLine("La sumatoria total es {0} y el promedio de notas es {1}",
             //    sumatoria , sumatoria / listaNotas.Length);
+
+            //checkando que sean pares o multiplos de 2
+            //int limite = Convert.ToInt32(Console.ReadLine());
+            //int count = 1;
+            //while (count <= limite)
+            //{
+            //    if (count % 2 == 0)
+            //    {
+            //        Console.WriteLine(count);
+            //    }
+            //    count++;
+            //}
+            //int limite = Convert.ToInt32(Console.ReadLine());
+            //int count = 2;
+            //while (count <= limite)
+            //{
+            //    Console.WriteLine(count);
+            //    count = count + 2;
+            //}
+
+            //int limite = Convert.ToInt32(Console.ReadLine());
+            //int count = 1;
+            //int multiplo = Convert.ToInt32(Console.ReadLine());
+            //while (count <= limite)
+            //{
+            //    if (count % multiplo == 0)
+            //    {
+            //        Console.WriteLine(count);
+            //    }
+            //    count++;
+            //}
+
+            // quiero mostrar todos los digitos d eun numero
+            // 8523
+            //2
+            //5
+            //8
+            //int numero = Convert.ToInt32(Console.ReadLine());
+            //while (numero > 0)
+            //{
+            //    Console.WriteLine(numero % 10);
+            //    numero = numero / 10;
+            //}
+
+            //int numero = Convert.ToInt32(Console.ReadLine());
+            //int resto;
+            //while (numero > 0)
+            //{
+            //    resto = numero % 10;
+            //    numero = numero * 10 + resto;
+            //    numero /= 10;
+            //}
+            //Console.WriteLine(numero);
+
+            //int numero = Convert.ToInt32(Console.ReadLine());
+            //int numeroOr = numero;
+            //int invertido = 0;
+            //while (numero > 0)
+            //{
+            //    invertido = invertido * 10 + numero % 10;
+            //    numero = numero / 10;
+            //}
+
+            //// int numeroPar = numero % 2 == 0 ? numero : numero + 1;
+
+            //Console.WriteLine("El numero {0} y su invertido {1} {2}",
+            //    numeroOr, invertido, numeroOr == invertido ? "es palindromo" : "no es palindromo");
+
+            // split parte de las cadenas
+            // programa que me permita ver las palabras de una frase
+
+            //string frase = Console.ReadLine();
+            //string[] listaPalabras = frase.Split(' ');
+            //int index = 0;
+            //while (index < listaPalabras.Length)
+            //{
+            //    Console.WriteLine(listaPalabras[index]);
+            //    index++;
+            //}
+
+            //string numeros = Console.ReadLine();
+            //char separador = Console.ReadLine()[0];
+            //string[] listaNumeros = numeros.Split(separador);
+            //int index = 0;
+            //while (index < listaNumeros.Length)
+            //{
+            //    Console.WriteLine(listaNumeros[index]);
+            //    index++;
+            //}
+
+            int numero = Convert.ToInt32(Console.ReadLine());
+            int numOriginal = numero;
+            int factorial = 1;
+            while (numero > 0)
+            {
+                factorial = factorial * numero;
+                numero--; // numero = numero - 1
+            }
+
+            Console.WriteLine("El factorial de {0} es {1}", numOriginal, factorial);
         }
     }
 }
