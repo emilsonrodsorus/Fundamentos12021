@@ -355,9 +355,9 @@ namespace ClasesFundamentos
             //}
 
             // matrices o listas son arreglos estaticos o sea que necesitan un tamaño 
-            //int[] listaNumeros = new int[10];
+            // int[] listaNumeros = new int[10];
             //listaNumeros[3] = 25;
-            int[] listaNumeros2 = new int[] { 5, 7, 9, 10, 13, 11 };
+            // int[] listaNumeros2 = new int[] { 5, 7, 9, 10, 13, 11 };
             //int[] listaNumeros3 = { 10, 11, 25, 5, 3, 6, 8, 9 };
             //Console.WriteLine(listaNumeros[3]);
             //Console.WriteLine(listaNumeros3.Length);
@@ -367,19 +367,71 @@ namespace ClasesFundamentos
             //Console.WriteLine(texto[8]);
             //Console.WriteLine(texto[texto.Length - 1]);
 
-            string texto = Console.ReadLine();
-            int midIndex = texto.Length / 2;
-            Console.WriteLine("La primera letra del texto es {0}", texto[0]);
-            Console.WriteLine("La ultima letra del texto es {0}", texto[texto.Length - 1]);
-            Console.WriteLine("La letra del medio del texto es {0}", texto[midIndex]);
+            //string texto = Console.ReadLine();
+            //int midIndex = texto.Length / 2;
+            //Console.WriteLine("La primera letra del texto es {0}", texto[0]);
+            //Console.WriteLine("La ultima letra del texto es {0}", texto[texto.Length - 1]);
+            //Console.WriteLine("La letra del medio del texto es {0}", texto[midIndex]);
 
-            Console.WriteLine("El primer numero de la lista es {0}", listaNumeros2[0]);
-            Console.WriteLine("El ultimo numero de la lista es {0}", listaNumeros2[listaNumeros2.Length - 1]);
-            Console.WriteLine("El numero del medio de la lista es {0}", listaNumeros2[listaNumeros2.Length / 2]);
+            //Console.WriteLine("El primer numero de la lista es {0}", listaNumeros2[0]);
+            //Console.WriteLine("El ultimo numero de la lista es {0}", listaNumeros2[listaNumeros2.Length - 1]);
+            //Console.WriteLine("El numero del medio de la lista es {0}", listaNumeros2[listaNumeros2.Length / 2]);
 
 
             // si intentamos acceder con un indice que no corresponde lanzara un error de prorgamacion
             // Console.WriteLine(texto[texto.Length]);
+
+            //// 0 0 0 0 0
+            //// 0 0 0 0 0
+            //// 0 0 0 0 0
+
+            // int[,] listaNumerosBid = new int[3,5];
+            //listaNumerosBid[1, 3] = 254;
+            ////5,10,35
+            ////8,25,123
+            //int[,] listaNumerosBid2 = { { 5,10,35 } , { 8,25,123} };
+
+            //int[][] listaJaggedNumeros = new int[5][];
+            //listaJaggedNumeros[0] = new int[20];
+            //listaJaggedNumeros[3] = new int[]{ 2,6,12,11,13 };
+
+            //int[] listaNotas = { 90, 85, 100, 100, 95, 90, 98 };
+
+            //int count = 0;
+            //while (count <= 5) 
+            //{
+            //    Console.WriteLine(count);
+            //    count++;// count = count + 1
+            //}
+
+            //int index = 0;
+            //while (index < listaNotas.Length)
+            //{
+            //    Console.WriteLine(listaNotas[index]);
+            //    index++;// index = index + 1
+            //}
+            //int[] listaNotas = { 95, 100, 85, 95, 90, 100, 98, 99, 97, 100 }; 
+            
+            
+            //int[] listaNotas = new int[10];
+            //int index = 0;
+
+            //while (index < listaNotas.Length)
+            //{
+            //    listaNotas[index] = Convert.ToInt32(Console.ReadLine());
+            //    index++;
+            //}
+
+            //index = 0;
+            //int sumatoria = 0;
+            //while (index < listaNotas.Length)
+            //{
+            //    sumatoria = sumatoria + listaNotas[index];
+            //    index++;
+            //}
+
+            //Console.WriteLine("La sumatoria total es {0} y el promedio de notas es {1}",
+            //    sumatoria , sumatoria / listaNotas.Length);
         }
     }
 }
