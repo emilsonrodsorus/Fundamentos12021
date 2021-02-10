@@ -533,16 +533,59 @@ namespace ClasesFundamentos
 
             //Console.WriteLine("El factorial de {0} es {1}", numOriginal, factorial);
 
-            int numeroBase = Convert.ToInt32(Console.ReadLine());
-            int exponente = Convert.ToInt32(Console.ReadLine());
-            int exponenteOr = exponente;
-            int resultado = 1;
-            while (exponente > 0)
+            //int numeroBase = Convert.ToInt32(Console.ReadLine());
+            //int exponente = Convert.ToInt32(Console.ReadLine());
+            //int exponenteOr = exponente;
+            //int resultado = 1;
+            //while (exponente > 0)
+            //{
+            //    resultado = resultado * numeroBase;
+            //    exponente--;
+            //}
+            //Console.WriteLine("El numero {0} elevado al {1} es {2}", numeroBase, exponenteOr, resultado);
+
+            //string texto;
+            //do
+            //{
+            //    texto = Console.ReadLine();
+            //    Console.WriteLine("El nuevo texto es {0}", texto);
+            //} while (!texto.Equals("salir"));
+
+            //string texto = Console.ReadLine();
+            //for (int index = 0; index < texto.Length ; index++)
+            //{
+            //    Console.WriteLine(texto[index]);
+            //}
+
+            int tamanioMat = 3;
+            int[,] matrizBi = new int[tamanioMat, tamanioMat];
+            // leer datos para la matriz
+            int seed = Environment.TickCount;
+            Random random = new Random(seed);
+            for (int fila = 0; fila < tamanioMat; fila++)
             {
-                resultado = resultado * numeroBase;
-                exponente--;
+                for (int columna = 0; columna < tamanioMat; columna++)
+                {
+                    int value = random.Next(0, 9);
+                    Console.WriteLine(value);
+                    //matrizBi[fila, columna] = Convert.ToInt32(Console.ReadLine());
+                }
             }
-            Console.WriteLine("El numero {0} elevado al {1} es {2}", numeroBase, exponenteOr, resultado);
+
+            // mostrar matriz
+
+            for (int fila = 0; fila < tamanioMat; fila++)
+            {
+                for (int columna = 0; columna < tamanioMat; columna++)
+                {
+                    //Console.Write(matrizBi[fila, columna]);
+                    
+                }
+
+                Console.WriteLine();
+            }
+
+
         }
     }
 }
