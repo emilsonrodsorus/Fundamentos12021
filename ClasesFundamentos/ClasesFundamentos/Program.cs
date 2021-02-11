@@ -585,94 +585,138 @@ namespace ClasesFundamentos
             //    Console.WriteLine();
             //}
 
-            Console.WriteLine("Ingrese el tamaño de la matriz");
-            int tamanioMat = Convert.ToInt32(Console.ReadLine());
-            int[,] matrizBi = new int[tamanioMat, tamanioMat];
-            // crear datos para la matriz
-            int seed = Environment.TickCount;
-            Random random = new Random(seed);
-            for (int fila = 0; fila < tamanioMat; fila++)
+            //Console.WriteLine("Ingrese el tamaño de la matriz");
+            //int tamanioMat = Convert.ToInt32(Console.ReadLine());
+            //int[,] matrizBi = new int[tamanioMat, tamanioMat];
+            //// crear datos para la matriz
+            //int seed = Environment.TickCount;
+            //Random random = new Random(seed);
+            //for (int fila = 0; fila < tamanioMat; fila++)
+            //{
+            //    for (int columna = 0; columna < tamanioMat; columna++)
+            //    {
+            //        matrizBi[fila, columna] = random.Next(0, 9);
+            //    }
+            //}
+
+            //// Seleccion de que matriz ver
+            //int tipoMatriz = 0;
+            //do
+            //{
+            //    Console.WriteLine("Ingrese que tipo de matriz quiere ver");
+            //    Console.WriteLine("1 matriz completa");
+            //    Console.WriteLine("2 Diagonales de la matriz");
+            //    Console.WriteLine("3 Contorno de la matriz");
+            //    Console.WriteLine("4 salir");
+            //    tipoMatriz = Convert.ToInt32(Console.ReadLine());
+            //    switch (tipoMatriz) 
+            //    {
+            //        case 1:
+            //            for (int fila = 0; fila < tamanioMat; fila++)
+            //            {
+            //                for (int columna = 0; columna < tamanioMat; columna++)
+            //                {
+            //                    Console.Write("{0} ", matrizBi[fila, columna]);
+            //                }
+
+            //                Console.WriteLine();
+            //            }
+            //            break;
+            //        case 2:
+            //            for (int fila = 0; fila < tamanioMat; fila++)
+            //            {
+            //                for (int columna = 0; columna < tamanioMat; columna++)
+            //                {
+            //                    //if (fila == columna || tamanioMat - columna - 1 == fila)
+            //                    //{
+            //                    //    Console.Write("{0} ", matrizBi[fila, columna]);
+            //                    //}
+            //                    //else 
+            //                    //{
+            //                    //    Console.Write("  ");
+            //                    //}
+
+            //                    // con operadores ternarios
+            //                    string textoMostrar = fila == columna || tamanioMat - columna - 1 == fila
+            //                        ? string.Format("{0} ", matrizBi[fila, columna])
+            //                        : "  ";
+            //                    Console.Write(textoMostrar);
+            //                }
+            //                Console.WriteLine();
+            //            }
+            //            break;
+            //        case 3:
+            //            for (int fila = 0; fila < tamanioMat; fila++)
+            //            {
+            //                for (int columna = 0; columna < tamanioMat; columna++)
+            //                {
+            //                    //if (fila == 0 || columna == 0 ||
+            //                    //    fila == tamanioMat - 1 || columna == tamanioMat - 1)
+            //                    //{
+            //                    //    Console.Write("{0} ", matrizBi[fila, columna]);
+            //                    //}
+            //                    //else 
+            //                    //{
+            //                    //    Console.Write("  ");
+            //                    //}
+
+            //                    // se puede cambiar la anterior logica por...
+            //                    string textoMostrar = fila == 0 || columna == 0 ||
+            //                        fila == tamanioMat - 1 || columna == tamanioMat - 1 
+            //                        ? string.Format("{0} ", matrizBi[fila, columna]) : "  ";
+            //                    Console.Write(textoMostrar);
+            //                }
+
+            //                Console.WriteLine();
+            //            }
+            //            break;
+            //    }
+            //} while (tipoMatriz != 4);
+
+            //int[] listaNumeros = { 1, 2, 9, 10, 25, 23, 10, 11 };
+            //int suma = 0;
+            //// tipo de dato,  nombre de variable,    in,     la lista que quiero recorrer
+            //foreach (int numero in listaNumeros)
+            //{
+            //    // numero = numero + 2; esta sintaxis no es posible
+            //    suma = suma + numero;
+            //}
+            //Console.WriteLine("La sumatoria de los numeros da {0} y el promedio de los numeros es {1}",
+            //    suma, suma / listaNumeros.Length);
+
+            // Criba
+
+            // esta parte genera la criba
+            int limite = Convert.ToInt32(Console.ReadLine());
+            int[] criba = new int[limite - 1];
+            for (int index = 0; index < criba.Length; index++)
             {
-                for (int columna = 0; columna < tamanioMat; columna++)
+                criba[index] = index + 2;
+            }
+
+            // recorrer con pibot e indice
+            for (int pibot = 0; pibot < criba.Length; pibot++)
+            {
+                if (criba[pibot] != 0)
                 {
-                    matrizBi[fila, columna] = random.Next(0, 9);
+                    for (int index = pibot + 1; index < criba.Length; index++)
+                    {
+                        if (criba[index] != 0 && criba[index] % criba[pibot] == 0)
+                        {
+                            criba[index] = 0;
+                        }
+                    }
                 }
             }
 
-            // Seleccion de que matriz ver
-            int tipoMatriz = 0;
-            do
+            //mostrar el resultado
+            foreach (int primo in criba)
             {
-                Console.WriteLine("Ingrese que tipo de matriz quiere ver");
-                Console.WriteLine("1 matriz completa");
-                Console.WriteLine("2 Diagonales de la matriz");
-                Console.WriteLine("3 Contorno de la matriz");
-                Console.WriteLine("4 salir");
-                tipoMatriz = Convert.ToInt32(Console.ReadLine());
-                switch (tipoMatriz) 
+                if (primo != 0)
                 {
-                    case 1:
-                        for (int fila = 0; fila < tamanioMat; fila++)
-                        {
-                            for (int columna = 0; columna < tamanioMat; columna++)
-                            {
-                                Console.Write("{0} ", matrizBi[fila, columna]);
-                            }
-
-                            Console.WriteLine();
-                        }
-                        break;
-                    case 2:
-                        for (int fila = 0; fila < tamanioMat; fila++)
-                        {
-                            for (int columna = 0; columna < tamanioMat; columna++)
-                            {
-                                //if (fila == columna || tamanioMat - columna - 1 == fila)
-                                //{
-                                //    Console.Write("{0} ", matrizBi[fila, columna]);
-                                //}
-                                //else 
-                                //{
-                                //    Console.Write("  ");
-                                //}
-
-                                // con operadores ternarios
-                                string textoMostrar = fila == columna || tamanioMat - columna - 1 == fila
-                                    ? string.Format("{0} ", matrizBi[fila, columna])
-                                    : "  ";
-                                Console.Write(textoMostrar);
-                            }
-                            Console.WriteLine();
-                        }
-                        break;
-                    case 3:
-                        for (int fila = 0; fila < tamanioMat; fila++)
-                        {
-                            for (int columna = 0; columna < tamanioMat; columna++)
-                            {
-                                //if (fila == 0 || columna == 0 ||
-                                //    fila == tamanioMat - 1 || columna == tamanioMat - 1)
-                                //{
-                                //    Console.Write("{0} ", matrizBi[fila, columna]);
-                                //}
-                                //else 
-                                //{
-                                //    Console.Write("  ");
-                                //}
-
-                                // se puede cambiar la anterior logica por...
-                                string textoMostrar = fila == 0 || columna == 0 ||
-                                    fila == tamanioMat - 1 || columna == tamanioMat - 1 
-                                    ? string.Format("{0} ", matrizBi[fila, columna]) : "  ";
-                                Console.Write(textoMostrar);
-                            }
-
-                            Console.WriteLine();
-                        }
-                        break;
+                    Console.WriteLine(primo);
                 }
-            } while (tipoMatriz != 4);
-
+            }
         }
     }
 }
