@@ -758,26 +758,61 @@ namespace ClasesFundamentos
             //}
 
             // paso uno ya podemos extraer cada palabra del texto
-            string texto = Console.ReadLine();
-            string aproxBusqueda = Console.ReadLine();
-            string[] listaPalabras = texto.Split(' ');
-            foreach (string palabra in listaPalabras)
+            //string texto = Console.ReadLine();
+            //string aproxBusqueda = Console.ReadLine();
+            //string[] listaPalabras = texto.Split(' ');
+            //foreach (string palabra in listaPalabras)
+            //{
+            //    for (int index = 0; index < palabra.Length; index++) // index++ similar  index = index + 1
+            //    {
+            //        if (palabra[index].Equals(aproxBusqueda[0]) &&
+            //            palabra.Length - index >= aproxBusqueda.Length)
+            //        {
+            //            //substring
+            //            string subCadena = palabra.Substring(index, aproxBusqueda.Length);
+            //            if (subCadena.Equals(aproxBusqueda))
+            //            {
+            //                Console.WriteLine(palabra);
+            //            }
+            //        }
+            //    }
+            //}
+
+            // Logica usando concatenacion de cadenas
+            //int altura = Convert.ToInt32(Console.ReadLine());
+            //string caracter = "*";
+            //for (int count = 1; count <= altura; count++)
+            //{
+            //    Console.WriteLine(caracter);
+            //    caracter = caracter + "*";
+            //}
+
+            // Logica para dibujar triangulo rectangulo
+
+            //int altura = Convert.ToInt32(Console.ReadLine());
+            //for (int fila = 1; fila <= altura; fila++)
+            //{
+            //    for (int columna = 1; columna <= fila; columna++)
+            //    {
+            //        Console.Write('*');
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            //Logica usando filas y columnas para el triangulo equilatero
+            int altura = Convert.ToInt32(Console.ReadLine());
+            string simbolo = "$";
+            for (int fila = 1; fila <= altura; fila++)
             {
-                for (int index = 0; index < palabra.Length; index++)
+                for (int espBlanco = 1; espBlanco <= altura - fila; espBlanco++)
                 {
-                    if (palabra[index].Equals(aproxBusqueda[0]))
-                    {
-                        if (palabra.Length - index >= aproxBusqueda.Length)
-                        {
-                            //substring
-                            string subCadena = palabra.Substring(index, aproxBusqueda.Length);
-                            if (subCadena.Equals(aproxBusqueda))
-                            {
-                                Console.WriteLine(palabra);
-                            }
-                        }
-                    }
+                    Console.Write(' ');
                 }
+                for (int columna = 1; columna <= (2 *fila) - 1; columna++)
+                {
+                    Console.Write(simbolo);
+                }
+                Console.WriteLine();
             }
         }
     }
