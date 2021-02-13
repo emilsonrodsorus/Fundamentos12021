@@ -800,20 +800,92 @@ namespace ClasesFundamentos
             //}
 
             //Logica usando filas y columnas para el triangulo equilatero
-            int altura = Convert.ToInt32(Console.ReadLine());
-            string simbolo = "$";
-            for (int fila = 1; fila <= altura; fila++)
-            {
-                for (int espBlanco = 1; espBlanco <= altura - fila; espBlanco++)
-                {
-                    Console.Write(' ');
-                }
-                for (int columna = 1; columna <= (2 *fila) - 1; columna++)
-                {
-                    Console.Write(simbolo);
-                }
-                Console.WriteLine();
-            }
+            //int altura = Convert.ToInt32(Console.ReadLine());
+            //string simbolo = "$";
+            //for (int fila = 1; fila <= altura; fila++)
+            //{
+            //    for (int espBlanco = 1; espBlanco <= altura - fila; espBlanco++)
+            //    {
+            //        Console.Write(' ');
+            //    }
+            //    for (int columna = 1; columna <= (2 *fila) - 1; columna++)
+            //    {
+            //        Console.Write(simbolo);
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            // Logica por filas y columnas para dibujar un rombo
+            //int altura = Convert.ToInt32(Console.ReadLine());
+            //string simbolo = "#";
+            //for (int fila = 1; fila <= altura; fila++)
+            //{
+            //    for (int espBlanco = 1; espBlanco <= altura - fila; espBlanco++)
+            //    {
+            //        Console.Write(' ');
+            //    }
+            //    for (int columna = 1; columna <= (2 * fila) - 1; columna++)
+            //    {
+            //        Console.Write(simbolo);
+            //    }
+            //    Console.WriteLine();
+            //}
+            //for (int fila = altura - 1; fila > 0 ; fila--)
+            //{
+            //    for (int espBlanco = 1; espBlanco <= altura - fila; espBlanco++)
+            //    {
+            //        Console.Write(' ');
+            //    }
+            //    for (int columna = 1; columna <= (2 * fila) - 1; columna++)
+            //    {
+            //        Console.Write(simbolo);
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            // ordenamiento por fuerza bruta
+            //int[] listaNUmeros = { 5, 9, 3, 12, 10, 100, 5, 7, 8, 9, 4, 10, 12, 13 };
+            //// {3, 4, 5, 5, 8, 9, 9, 10, 7, 12, 100, 10, 12, 13 }
+            //for (int pibot = 0; pibot < listaNUmeros.Length; pibot++)
+            //{
+            //    for (int index = pibot + 1; index < listaNUmeros.Length; index++)
+            //    {
+            //        if (listaNUmeros[index] < listaNUmeros[pibot])
+            //        {
+            //            int aux = listaNUmeros[pibot];
+            //            listaNUmeros[pibot] = listaNUmeros[index];
+            //            listaNUmeros[index] = aux;
+            //        }
+            //    }
+            //}
+
+            //foreach (int numero in listaNUmeros)
+            //{
+            //    Console.WriteLine(numero);
+            //}
+
+            // algoritmo de burbuja
+            //int[] listaNUmeros = { 5, 9, 3, 12, 10, 100, 5, 7, 8, 9, 4, 10, 12, 13 };
+            //int iteracion = 0;
+            //bool permuta = true;
+            //int indexActual;
+
+            //while (permuta)
+            //{
+            //    permuta = false;
+            //    iteracion++;
+
+            //    for (indexActual = 0; indexActual < listaNUmeros.Length - iteracion; indexActual++)
+            //    {
+            //        if (listaNUmeros[indexActual] > listaNUmeros[indexActual + 1])
+            //        {
+            //            permuta = true;
+            //            int aux = listaNUmeros[indexActual];
+            //            listaNUmeros[indexActual] = listaNUmeros[indexActual + 1];
+            //            listaNUmeros[indexActual + 1] = aux;
+            //        }
+            //    }
+            //}
         }
     }
 }
