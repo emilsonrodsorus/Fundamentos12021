@@ -763,7 +763,21 @@ namespace ClasesFundamentos
             string[] listaPalabras = texto.Split(' ');
             foreach (string palabra in listaPalabras)
             {
-                Console.WriteLine(palabra);
+                for (int index = 0; index < palabra.Length; index++)
+                {
+                    if (palabra[index].Equals(aproxBusqueda[0]))
+                    {
+                        if (palabra.Length - index >= aproxBusqueda.Length)
+                        {
+                            //substring
+                            string subCadena = palabra.Substring(index, aproxBusqueda.Length);
+                            if (subCadena.Equals(aproxBusqueda))
+                            {
+                                Console.WriteLine(palabra);
+                            }
+                        }
+                    }
+                }
             }
         }
     }
