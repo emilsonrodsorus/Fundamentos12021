@@ -687,35 +687,83 @@ namespace ClasesFundamentos
             // Criba
 
             // esta parte genera la criba
-            int limite = Convert.ToInt32(Console.ReadLine());
-            int[] criba = new int[limite - 1];
-            for (int index = 0; index < criba.Length; index++)
-            {
-                criba[index] = index + 2;
-            }
+            //int limite = Convert.ToInt32(Console.ReadLine());
+            //int[] criba = new int[limite - 1];
+            //for (int index = 0; index < criba.Length; index++)
+            //{
+            //    criba[index] = index + 2;
+            //}
 
-            // recorrer con pibot e indice
-            for (int pibot = 0; pibot < criba.Length; pibot++)
-            {
-                if (criba[pibot] != 0)
-                {
-                    for (int index = pibot + 1; index < criba.Length; index++)
-                    {
-                        if (criba[index] != 0 && criba[index] % criba[pibot] == 0)
-                        {
-                            criba[index] = 0;
-                        }
-                    }
-                }
-            }
+            //// recorrer con pibot e indice
+            //for (int pibot = 0; pibot < criba.Length; pibot++)
+            //{
+            //    if (criba[pibot] != 0)
+            //    {
+            //        for (int index = pibot + 1; index < criba.Length; index++)
+            //        {
+            //            if (criba[index] != 0 && criba[index] % criba[pibot] == 0)
+            //            {
+            //                criba[index] = 0;
+            //            }
+            //        }
+            //    }
+            //}
 
-            //mostrar el resultado
-            foreach (int primo in criba)
+            ////mostrar el resultado
+            //foreach (int primo in criba)
+            //{
+            //    if (primo != 0)
+            //    {
+            //        Console.WriteLine(primo);
+            //    }
+            //}
+
+            //fibonacci en un indice requerido
+
+            //int index = Convert.ToInt32(Console.ReadLine());
+            //int n1 = 0;
+            //int n2 = 1;
+            //int currentIndex = 2;
+            //while (currentIndex < index)
+            //{
+            //    int aux = n2;
+            //    n2 = n2 + n1;
+            //    n1 = aux;
+            //    currentIndex++;
+            //}
+
+            //Console.WriteLine(n2);
+            //int num1 = 50;
+            //int num2 = 25;
+            //while (num1 > num2)
+            //{
+            //    num1++;
+            //}
+
+            //do
+            //{
+
+            //} while (num2 < num1);
+
+            //int index = 0; // su variable de control se puede declarar fuera del for
+            //for (; index < num1; index = index + 2)// la regla de cambio de la variable de control puede ser cualquier cambio que necesitemos
+            //{
+
+            //}
+
+            //int[] listaNumeros = { 5, 10, 12, 1, 13, 14, 15 };
+            //foreach (int numero in listaNumeros)
+            //{
+
+            //}
+
+            // paso uno ya podemos extraer cada palabra del texto
+            string texto = Console.ReadLine();
+            string aproxBusqueda = Console.ReadLine();
+            string[] listaPalabras = texto.Split(' ');
+            foreach (string palabra in listaPalabras)
             {
-                if (primo != 0)
-                {
-                    Console.WriteLine(primo);
-                }
+                Console.WriteLine(palabra);
             }
         }
     }
