@@ -887,38 +887,38 @@ namespace ClasesFundamentos
             //    }
             //}
 
-            int[] listaNUmeros = { 5, 9, 3, 12, 10, 100, 5, 7, 8, 9, 4, 10, 12, 13 };
-            bool permuta;
-            int fin = listaNUmeros.Length - 1;
-            int inicio = 1;
-            int indexAcutal = 0;
-            int direccion = 1;
-            do
-            {
-                permuta = false;
+            //int[] listaNUmeros = { 5, 9, 3, 12, 10, 100, 5, 7, 8, 9, 4, 10, 12, 13 };
+            //bool permuta;
+            //int fin = listaNUmeros.Length - 1;
+            //int inicio = 1;
+            //int indexAcutal = 0;
+            //int direccion = 1;
+            //do
+            //{
+            //    permuta = false;
 
-                while ((direccion == 1 && indexAcutal < fin) || (direccion == -1 && indexAcutal > inicio))
-                {
-                    indexAcutal = indexAcutal + direccion;
-                    if (listaNUmeros[indexAcutal] < listaNUmeros[indexAcutal - 1])
-                    {
-                        int aux = listaNUmeros[indexAcutal];
-                        listaNUmeros[indexAcutal] = listaNUmeros[indexAcutal - 1];
-                        listaNUmeros[indexAcutal - 1] = aux;
-                        permuta = true;
-                    }
-                }
+            //    while ((direccion == 1 && indexAcutal < fin) || (direccion == -1 && indexAcutal > inicio))
+            //    {
+            //        indexAcutal = indexAcutal + direccion;
+            //        if (listaNUmeros[indexAcutal] < listaNUmeros[indexAcutal - 1])
+            //        {
+            //            int aux = listaNUmeros[indexAcutal];
+            //            listaNUmeros[indexAcutal] = listaNUmeros[indexAcutal - 1];
+            //            listaNUmeros[indexAcutal - 1] = aux;
+            //            permuta = true;
+            //        }
+            //    }
 
-                if (direccion == 1)
-                {
-                    fin--;
-                }
-                else 
-                {
-                    inicio++;
-                }
-                direccion = -direccion;
-            } while (permuta);
+            //    if (direccion == 1)
+            //    {
+            //        fin--;
+            //    }
+            //    else 
+            //    {
+            //        inicio++;
+            //    }
+            //    direccion = -direccion;
+            //} while (permuta);
         }
     }
 }

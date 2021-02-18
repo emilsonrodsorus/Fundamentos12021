@@ -1,0 +1,7 @@
+D:\Codigo2021\Fundamentos12021\ClasesFundamentos\ManejoFunciones\bin\Debug\ManejoFunciones.exe.config
+D:\Codigo2021\Fundamentos12021\ClasesFundamentos\ManejoFunciones\bin\Debug\ManejoFunciones.exe
+D:\Codigo2021\Fundamentos12021\ClasesFundamentos\ManejoFunciones\bin\Debug\ManejoFunciones.pdb
+D:\Codigo2021\Fundamentos12021\ClasesFundamentos\ManejoFunciones\obj\Debug\ManejoFunciones.csprojAssemblyReference.cache
+D:\Codigo2021\Fundamentos12021\ClasesFundamentos\ManejoFunciones\obj\Debug\ManejoFunciones.csproj.CoreCompileInputs.cache
+D:\Codigo2021\Fundamentos12021\ClasesFundamentos\ManejoFunciones\obj\Debug\ManejoFunciones.exe
+D:\Codigo2021\Fundamentos12021\ClasesFundamentos\ManejoFunciones\obj\Debug\ManejoFunciones.pdb
