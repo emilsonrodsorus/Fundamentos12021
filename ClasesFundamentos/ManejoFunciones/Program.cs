@@ -38,8 +38,10 @@ namespace ManejoFunciones
             //int numeroInv = InvertirNumero(1548, 0);
             //Console.WriteLine("El numero invertido es {0}", numeroInv);
             //int numFibonacci = Fibonacci(1,1,2,8);
-            int numFibonacci = Fibonacci(8);
-            Console.WriteLine(numFibonacci);
+            // int numFibonacci = Fibonacci(8);
+            //int sumDig = CalcularSumaDigitos(1523);
+            int mcd = MaximoComunDivisorEuclides(412,184);
+            Console.WriteLine(mcd);
         }
 
         /// <summary>
@@ -208,5 +210,47 @@ namespace ManejoFunciones
         //        return Fibonacci(index - 1) + Fibonacci(index - 2);
         //    }
         //}
+
+        // Calcular la sumatoria de los numeros de forma recursiva
+        //private static int CalcularSumaDigitos(int numero)
+        //{
+        //    if (numero == 0)
+        //    {
+        //        return numero;
+        //    }
+        //    else
+        //    {
+        //        return numero % 10 + CalcularSumaDigitos(numero / 10);
+        //    }
+        //}
+
+        private static int MaximoComunDivisorEuclides(int numero1, int numero2)
+        {
+            // por puros if
+            //if (numero1 == numero2)
+            //{
+            //    return numero1;
+            //}
+            //else if (numero1 > numero2)
+            //{
+            //    return MaximoComunDivisorEuclides(numero1 - numero2, numero2);
+            //}
+            //else 
+            //{
+            //    return MaximoComunDivisorEuclides(numero1, numero2 - numero1);
+            //}
+            // por operadores ternarios
+            if (numero1 == numero2)
+            {
+                return numero1;
+            }
+            else 
+            {
+                return numero1 > numero2
+                    ? MaximoComunDivisorEuclides(numero1 - numero2, numero2)
+                    : MaximoComunDivisorEuclides(numero1, numero2 - numero1);
+            }
+        }
+
     }
 }
