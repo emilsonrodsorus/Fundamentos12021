@@ -57,6 +57,37 @@ namespace ManejoFunciones
             //{
             //    Console.WriteLine("No es un texto palindromo");
             //}
+
+            while (true)
+            {
+                //int numero1 = Convert.ToInt32( Console.ReadLine());
+                //int numero2 = Convert.ToInt32(Console.ReadLine());
+
+                //try 
+                //{
+                //    int result = numero1 / numero2;
+                //    Console.WriteLine(result);
+                //}
+                //catch (Exception ex) 
+                //{
+                //    Console.WriteLine(ex.Message);
+                //}
+
+                string[] listaNombres = { "Carlos Ugarte", "Augusto Fernandez", "Carla Aranda", "Juan Rocha" };
+                int index = Convert.ToInt32(Console.ReadLine());
+                try
+                {
+                    Console.WriteLine(listaNombres[index]);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+                finally 
+                {
+                    Console.WriteLine("Ingrese el siguiente indice");
+                }
+            }
         }
 
         /// <summary>
@@ -292,16 +323,16 @@ namespace ManejoFunciones
         //    }
         //}
 
-        private static string InvertirCadena(string texto, int index)
-        {
-            if (index >= texto.Length)
-            {
-                return string.Empty;//""
-            }
-            else 
-            {
-                return InvertirCadena(texto, index + 1) + texto[index];
-            }
-        }
+        //private static string InvertirCadena(string texto, int index)
+        //{
+        //    if (index >= texto.Length)
+        //    {
+        //        return string.Empty;//""
+        //    }
+        //    else 
+        //    {
+        //        return InvertirCadena(texto, index + 1) + texto[index];
+        //    }
+        //}
     }
 }
