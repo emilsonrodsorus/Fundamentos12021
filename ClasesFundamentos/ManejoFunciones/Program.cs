@@ -40,8 +40,23 @@ namespace ManejoFunciones
             //int numFibonacci = Fibonacci(1,1,2,8);
             // int numFibonacci = Fibonacci(8);
             //int sumDig = CalcularSumaDigitos(1523);
-            int mcd = MaximoComunDivisorEuclides(412,184);
-            Console.WriteLine(mcd);
+            //int mcd = MaximoComunDivisorEuclides(412,184);
+            //int result = MultiplicacionSumas(5,5);
+            //Console.WriteLine(result);
+            //string texto = "Hola mundo de fundamentos de progra!!!!";
+            //char buscar = 'o';
+            //int buscador = ContadorCoincidencias(texto, buscar, 0);
+            //Console.WriteLine(buscador);
+            //string textoOriginal = "aperrepa";
+            //string textoInv = InvertirCadena(textoOriginal, 0);
+            //if (textoOriginal.Equals(textoInv))
+            //{
+            //    Console.WriteLine("Es un texto palindromo");
+            //}
+            //else 
+            //{
+            //    Console.WriteLine("No es un texto palindromo");
+            //}
         }
 
         /// <summary>
@@ -224,33 +239,69 @@ namespace ManejoFunciones
         //    }
         //}
 
-        private static int MaximoComunDivisorEuclides(int numero1, int numero2)
+        //private static int MaximoComunDivisorEuclides(int numero1, int numero2)
+        //{
+        // por puros if
+        //if (numero1 == numero2)
+        //{
+        //    return numero1;
+        //}
+        //else if (numero1 > numero2)
+        //{
+        //    return MaximoComunDivisorEuclides(numero1 - numero2, numero2);
+        //}
+        //else 
+        //{
+        //    return MaximoComunDivisorEuclides(numero1, numero2 - numero1);
+        //}
+        // por operadores ternarios
+        //if (numero1 == numero2)
+        //{
+        //    return numero1;
+        //}
+        //else 
+        //{
+        //    return numero1 > numero2
+        //        ? MaximoComunDivisorEuclides(numero1 - numero2, numero2)
+        //        : MaximoComunDivisorEuclides(numero1, numero2 - numero1);
+        //}
+        //}
+        //private static int MultiplicacionSumas(int multiplicando, int multiplicador)
+        //{
+        //    if (multiplicador == 1)
+        //    {
+        //        return multiplicando;
+        //    }
+        //    else 
+        //    {
+        //        return multiplicando + MultiplicacionSumas(multiplicando, multiplicador - 1);
+        //    }
+        //}
+
+        //private static int ContadorCoincidencias(string texto, char buscar, int index)
+        //{
+        //    if (index >= texto.Length)
+        //    {
+        //        return 0;
+        //    }
+        //    else 
+        //    {
+        //        return texto[index].Equals(buscar)
+        //            ? 1 + ContadorCoincidencias(texto, buscar, index + 1)
+        //            : ContadorCoincidencias(texto, buscar, index + 1);
+        //    }
+        //}
+
+        private static string InvertirCadena(string texto, int index)
         {
-            // por puros if
-            //if (numero1 == numero2)
-            //{
-            //    return numero1;
-            //}
-            //else if (numero1 > numero2)
-            //{
-            //    return MaximoComunDivisorEuclides(numero1 - numero2, numero2);
-            //}
-            //else 
-            //{
-            //    return MaximoComunDivisorEuclides(numero1, numero2 - numero1);
-            //}
-            // por operadores ternarios
-            if (numero1 == numero2)
+            if (index >= texto.Length)
             {
-                return numero1;
+                return string.Empty;//""
             }
             else 
             {
-                return numero1 > numero2
-                    ? MaximoComunDivisorEuclides(numero1 - numero2, numero2)
-                    : MaximoComunDivisorEuclides(numero1, numero2 - numero1);
+                return InvertirCadena(texto, index + 1) + texto[index];
             }
         }
-
     }
 }
