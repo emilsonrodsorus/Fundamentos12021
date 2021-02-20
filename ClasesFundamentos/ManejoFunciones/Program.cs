@@ -27,6 +27,19 @@ namespace ManejoFunciones
             //criba = ProcesarMultiplos(criba);
             //Console.WriteLine("Criba Sin multiplos solo Primos");
             //MostrarCriba(criba);
+
+            //MostrarNumero(1, 3500);
+            // int resultFac = Factorial(5);
+            // Console.WriteLine(resultFac);
+            //int numeroBase = 5;
+            //int exponente = 10;
+            //int result = Potencia(numeroBase, exponente);
+            //Console.WriteLine(result);
+            //int numeroInv = InvertirNumero(1548, 0);
+            //Console.WriteLine("El numero invertido es {0}", numeroInv);
+            //int numFibonacci = Fibonacci(1,1,2,8);
+            int numFibonacci = Fibonacci(8);
+            Console.WriteLine(numFibonacci);
         }
 
         /// <summary>
@@ -50,7 +63,7 @@ namespace ManejoFunciones
 
         /// <summary>
         /// La sobrecarga de funciones permite usar una firma de funcion similar pero que la distingue y que maneja
-        /// un resultado diferente
+        /// una funcionalidad diferente
         /// </summary>
         //private static void ImprimirSaludo(string nombreSaludar)
         //{
@@ -67,7 +80,7 @@ namespace ManejoFunciones
         //    }
         //}
 
-        //private static void ImprimirSaludo(string[] listaNombres)
+        //private static void ImprimirSaludo(string[] listaNombres, int cantidad)
         //{
         //    foreach (string nombre in listaNombres)
         //    {
@@ -115,6 +128,84 @@ namespace ManejoFunciones
         //        {
         //            Console.WriteLine(item);
         //        }
+        //    }
+        //}
+
+        //private static void MostrarNumero(int numero, int limite)
+        //{
+        //    if (numero <= limite)
+        //    {
+        //        Console.WriteLine(numero);
+        //        MostrarNumero(numero + 1, limite);
+        //    }
+        //}
+
+        //private static int Factorial(int numero)
+        //{
+        //    if (numero == 1 || numero == 0)
+        //    {
+        //        return 1;
+        //    }
+        //    else 
+        //    {
+        //        return numero * Factorial(numero - 1);
+        //    }
+        //}
+
+        //private static int Potencia(int numeroBase, int exponente)
+        //{
+        //    if (exponente == 1)
+        //    {
+        //        return numeroBase;
+        //    }
+        //    else if (exponente == 0)
+        //    {
+        //        return 1;
+        //    }
+        //    else 
+        //    {
+        //        return numeroBase * Potencia(numeroBase, exponente - 1);
+        //    }
+        //}
+
+        // Invertir un numero de forma recursiva
+        //private static int InvertirNumero(int numeroOrigianl, int numeroInvertido)
+        //{
+        //    if (numeroOrigianl == 0)
+        //    {
+        //        return numeroInvertido;
+        //    }
+        //    else 
+        //    {
+        //        int aux = numeroOrigianl % 10;
+        //        numeroInvertido = numeroInvertido * 10 + aux;
+        //        return InvertirNumero(numeroOrigianl / 10, numeroInvertido);
+        //    }
+        //}
+
+        // Fibonacci lineal
+        //private static int Fibonacci(int numero1, int numero2, int indiceActual, int indiceLimite)
+        //{
+        //    if (indiceActual >= indiceLimite)
+        //    {
+        //        return numero2;
+        //    }
+        //    else
+        //    {
+        //        return Fibonacci(numero2, numero1 + numero2, indiceActual + 1, indiceLimite);
+        //    }
+        //}
+
+        // Fibonacci por back track
+        //private static int Fibonacci(int index)
+        //{
+        //    if (index == 1 || index == 2)
+        //    {
+        //        return 1;
+        //    }
+        //    else 
+        //    {
+        //        return Fibonacci(index - 1) + Fibonacci(index - 2);
         //    }
         //}
     }
