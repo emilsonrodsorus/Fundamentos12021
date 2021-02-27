@@ -46,6 +46,7 @@
     <Compile Include="Clases\Curso.cs" />
     <Compile Include="Clases\Estudiante.cs" />
     <Compile Include="Clases\Operaciones.cs" />
+    <Compile Include="Clases\Profesor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -10,31 +10,45 @@ namespace IntroPOO.Clases
     {
         // atributos de clase
         Estudiante[] listaEstudiantes;
+        Profesor profesorCurso;
+        //int anioEscolaridad;
+
 
         // contructor
-        public Curso(int cantidad)
+        public Curso(int cantidad, int anioEscolaridad)
         {
             listaEstudiantes = new Estudiante[cantidad];
+            AnioEscolaridad = anioEscolaridad;
         }
 
+
+        //properties
+        public int AnioEscolaridad { get; set; }
+
+
         // metodos
-        public void AgregarEstudiante(string nombreCompleto, string codigoEst, int escolaridad)
+        public void AgregarEstudiante(string nombreCompleto, string codigoEst)
         {
-            Estudiante est1 = new Estudiante(nombreCompleto, codigoEst, escolaridad);
+            Estudiante est1 = new Estudiante(nombreCompleto, codigoEst, AnioEscolaridad);
             listaEstudiantes[ObtenerIndiceEspacio()] = est1;
         }
 
-        public void AgregarEspacio(int escolaridad)
+        public void AgregarEspacio()
         {
             try
             {
-                Estudiante est1 = new Estudiante(escolaridad);
+                Estudiante est1 = new Estudiante(AnioEscolaridad);
                 listaEstudiantes[ObtenerIndiceEspacio()] = est1;
             }
             catch (Exception ex) 
             {
                 Console.WriteLine("El curso no tiene mas cupos");
             }
+        }
+
+        public void AgregarProfesor(string nombreCompleto, string materia)
+        {
+            profesorCurso = new Profesor(nombreCompleto, materia);
         }
 
         private int ObtenerIndiceEspacio()

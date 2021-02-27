@@ -23,11 +23,12 @@ namespace IntroPOO
             //Estudiante est1 = new Estudiante("Carlos Fernandez", "123456ASD", 3);
             //Estudiante est2 = new Estudiante(2);
 
-            Curso curso1 = new Curso(3);
-            curso1.AgregarEstudiante("Carlos Fernandez", "123456ASD", 1);
-            curso1.AgregarEspacio(1);
-            curso1.AgregarEstudiante("Carlos Fernandez", "123456ASD", 1);
-            curso1.AgregarEspacio(1);
+            Curso curso1 = new Curso(30, 1);
+            curso1.AgregarProfesor("Juan Antezana", "progra1");
+            curso1.AgregarEstudiante("Carlos Fernandez", "123456ASD");
+            curso1.AgregarEspacio();
+
+            Curso curso2 = new Curso(30, 2);
         }
     }
 }
