@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClasesFundamentos", "Clases
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManejoFunciones", "ManejoFunciones\ManejoFunciones.csproj", "{B3F22CB3-023A-4D6E-8070-2A890343CB73}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroPOO", "IntroPOO\IntroPOO.csproj", "{4DFA5E6F-4AC8-4146-A10D-454FB7278E48}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B3F22CB3-023A-4D6E-8070-2A890343CB73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3F22CB3-023A-4D6E-8070-2A890343CB73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3F22CB3-023A-4D6E-8070-2A890343CB73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DFA5E6F-4AC8-4146-A10D-454FB7278E48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DFA5E6F-4AC8-4146-A10D-454FB7278E48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DFA5E6F-4AC8-4146-A10D-454FB7278E48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DFA5E6F-4AC8-4146-A10D-454FB7278E48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

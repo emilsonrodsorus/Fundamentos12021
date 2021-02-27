@@ -1,0 +1,7 @@
+D:\Codigo2021\Fundamentos12021\ClasesFundamentos\IntroPOO\bin\Debug\IntroPOO.exe.config
+D:\Codigo2021\Fundamentos12021\ClasesFundamentos\IntroPOO\bin\Debug\IntroPOO.exe
+D:\Codigo2021\Fundamentos12021\ClasesFundamentos\IntroPOO\bin\Debug\IntroPOO.pdb
+D:\Codigo2021\Fundamentos12021\ClasesFundamentos\IntroPOO\obj\Debug\IntroPOO.csprojAssemblyReference.cache
+D:\Codigo2021\Fundamentos12021\ClasesFundamentos\IntroPOO\obj\Debug\IntroPOO.csproj.CoreCompileInputs.cache
+D:\Codigo2021\Fundamentos12021\ClasesFundamentos\IntroPOO\obj\Debug\IntroPOO.exe
+D:\Codigo2021\Fundamentos12021\ClasesFundamentos\IntroPOO\obj\Debug\IntroPOO.pdb
