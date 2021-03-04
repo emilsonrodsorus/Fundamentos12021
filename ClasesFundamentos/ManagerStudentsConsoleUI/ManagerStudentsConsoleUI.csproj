@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4DFA5E6F-4AC8-4146-A10D-454FB7278E48}</ProjectGuid>
+    <ProjectGuid>{9DDD0D8D-1B87-4909-AA84-40BD84468D57}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>IntroPOO</RootNamespace>
-    <AssemblyName>IntroPOO</AssemblyName>
+    <RootNamespace>ManagerStudentsConsoleUI</RootNamespace>
+    <AssemblyName>ManagerStudentsConsoleUI</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ManejadorEstudianteControllers">
+      <HintPath>..\ManejadorEstudianteControllers\bin\Debug\ManejadorEstudianteControllers.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,17 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Clases\Curso.cs" />
-    <Compile Include="Clases\Estudiante.cs" />
-    <Compile Include="Clases\Operaciones.cs" />
-    <Compile Include="Clases\Profesor.cs" />
-    <Compile Include="Criba\CribaEr.cs" />
-    <Compile Include="Criba\GeneradorCriba.cs" />
-    <Compile Include="Criba\ProcesarCriba.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Triangulo\TrianguloInferior.cs" />
-    <Compile Include="Triangulo\TrianguloSuperior.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

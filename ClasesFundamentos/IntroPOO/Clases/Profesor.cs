@@ -12,7 +12,10 @@ namespace IntroPOO.Clases
 
         public Profesor(string nombreCompleto, string materia)
         {
-            Materia = materia;
+            if(materia.Length < 150)
+            {
+                Materia = materia;
+            }
             this.nombreCompleto = nombreCompleto;
         }
 
@@ -24,7 +27,13 @@ namespace IntroPOO.Clases
         public string NombreCompleto
         {
             get { return nombreCompleto; }
-            set { nombreCompleto = value; }
+            set 
+            {
+                if (value.Length < 150)
+                {
+                    nombreCompleto = value;
+                }
+            }
         }
 
         // este propertie permite ademas \englobar el attributo materia

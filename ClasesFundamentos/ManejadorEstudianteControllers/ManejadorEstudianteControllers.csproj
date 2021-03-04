@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4DFA5E6F-4AC8-4146-A10D-454FB7278E48}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>IntroPOO</RootNamespace>
-    <AssemblyName>IntroPOO</AssemblyName>
+    <ProjectGuid>{11296C80-C526-4018-B6C6-8FEC42E52E9A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ManejadorEstudianteControllers</RootNamespace>
+    <AssemblyName>ManejadorEstudianteControllers</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,20 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Clases\Curso.cs" />
-    <Compile Include="Clases\Estudiante.cs" />
-    <Compile Include="Clases\Operaciones.cs" />
-    <Compile Include="Clases\Profesor.cs" />
-    <Compile Include="Criba\CribaEr.cs" />
-    <Compile Include="Criba\GeneradorCriba.cs" />
-    <Compile Include="Criba\ProcesarCriba.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Managers\EstudianteManager.cs" />
+    <Compile Include="Models\Estudiante.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Triangulo\TrianguloInferior.cs" />
-    <Compile Include="Triangulo\TrianguloSuperior.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,0 +1,10 @@
+D:\Codigo2021\Fundamentos12021\ClasesFundamentos\ManagerStudentsConsoleUI\bin\Debug\ManagerStudentsConsoleUI.exe.config
+D:\Codigo2021\Fundamentos12021\ClasesFundamentos\ManagerStudentsConsoleUI\bin\Debug\ManagerStudentsConsoleUI.exe
+D:\Codigo2021\Fundamentos12021\ClasesFundamentos\ManagerStudentsConsoleUI\bin\Debug\ManagerStudentsConsoleUI.pdb
+D:\Codigo2021\Fundamentos12021\ClasesFundamentos\ManagerStudentsConsoleUI\obj\Debug\ManagerStudentsConsoleUI.csprojAssemblyReference.cache
+D:\Codigo2021\Fundamentos12021\ClasesFundamentos\ManagerStudentsConsoleUI\obj\Debug\ManagerStudentsConsoleUI.csproj.CoreCompileInputs.cache
+D:\Codigo2021\Fundamentos12021\ClasesFundamentos\ManagerStudentsConsoleUI\obj\Debug\ManagerStudentsConsoleUI.exe
+D:\Codigo2021\Fundamentos12021\ClasesFundamentos\ManagerStudentsConsoleUI\obj\Debug\ManagerStudentsConsoleUI.pdb
+D:\Codigo2021\Fundamentos12021\ClasesFundamentos\ManagerStudentsConsoleUI\bin\Debug\ManejadorEstudianteControllers.dll
+D:\Codigo2021\Fundamentos12021\ClasesFundamentos\ManagerStudentsConsoleUI\bin\Debug\ManejadorEstudianteControllers.pdb
+D:\Codigo2021\Fundamentos12021\ClasesFundamentos\ManagerStudentsConsoleUI\obj\Debug\ManagerStudentsConsoleUI.csproj.CopyComplete

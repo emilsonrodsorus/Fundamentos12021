@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManejoFunciones", "ManejoFu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroPOO", "IntroPOO\IntroPOO.csproj", "{4DFA5E6F-4AC8-4146-A10D-454FB7278E48}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManejadorEstudianteControllers", "ManejadorEstudianteControllers\ManejadorEstudianteControllers.csproj", "{11296C80-C526-4018-B6C6-8FEC42E52E9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagerStudentsConsoleUI", "ManagerStudentsConsoleUI\ManagerStudentsConsoleUI.csproj", "{9DDD0D8D-1B87-4909-AA84-40BD84468D57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{4DFA5E6F-4AC8-4146-A10D-454FB7278E48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DFA5E6F-4AC8-4146-A10D-454FB7278E48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DFA5E6F-4AC8-4146-A10D-454FB7278E48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11296C80-C526-4018-B6C6-8FEC42E52E9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11296C80-C526-4018-B6C6-8FEC42E52E9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11296C80-C526-4018-B6C6-8FEC42E52E9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11296C80-C526-4018-B6C6-8FEC42E52E9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DDD0D8D-1B87-4909-AA84-40BD84468D57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DDD0D8D-1B87-4909-AA84-40BD84468D57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DDD0D8D-1B87-4909-AA84-40BD84468D57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DDD0D8D-1B87-4909-AA84-40BD84468D57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
