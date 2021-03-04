@@ -8,6 +8,7 @@ namespace ManejadorEstudianteControllers.Models
 {
     public class Estudiante
     {
+        // Object es la parte mas primitiva de donde parten todas las clases y objetos en c#
         //atributos
         internal string ciudad;
 
@@ -26,6 +27,13 @@ namespace ManejadorEstudianteControllers.Models
         internal void AgregarCiudad(string ciudad)
         {
             this.ciudad = ciudad;
+        }
+
+        // otra caracteristica de las funciones es la sobreescritura
+        // basicamente permite cambiar la funcionalidad de una funcion predefinida
+        public override string ToString()
+        {
+            return string.Format("{0} -> {1}", NombreEstuciante, CodigoEstuciante);
         }
     }
 }

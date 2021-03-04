@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManejadorEstudianteControll
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagerStudentsConsoleUI", "ManagerStudentsConsoleUI\ManagerStudentsConsoleUI.csproj", "{9DDD0D8D-1B87-4909-AA84-40BD84468D57}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManejadorEstudianteUIForm", "ManejadorEstudianteUIForm\ManejadorEstudianteUIForm.csproj", "{C3FB1BAA-FABA-4960-9B50-BBA6C604550F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{9DDD0D8D-1B87-4909-AA84-40BD84468D57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DDD0D8D-1B87-4909-AA84-40BD84468D57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DDD0D8D-1B87-4909-AA84-40BD84468D57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3FB1BAA-FABA-4960-9B50-BBA6C604550F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3FB1BAA-FABA-4960-9B50-BBA6C604550F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3FB1BAA-FABA-4960-9B50-BBA6C604550F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3FB1BAA-FABA-4960-9B50-BBA6C604550F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
